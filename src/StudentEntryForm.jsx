@@ -20,7 +20,7 @@ export default function StudentEntryForm() {
     if (!formData.name || !formData.age || !formData.grade) return;
 
     setStudents([...students, formData]);
-    setFormData({ name: "", age: "", grade: "" });
+    // setFormData({ name: "", age: "", grade: "" });
   };
 
   const clearForm = () => {
