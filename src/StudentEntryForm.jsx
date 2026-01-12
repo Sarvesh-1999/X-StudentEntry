@@ -62,10 +62,11 @@ export default function StudentEntryForm() {
             <label>Grade</label>
             <select name="grade" value={formData.grade} onChange={handleChange}>
               <option value="">Select grade</option>
-              <option value="Class 6">Class 6</option>
-              <option value="Class 7">Class 7</option>
-              <option value="Class 8">Class 8</option>
-              <option value="Class 9">Class 9</option>
+              <option value="5">Class 5</option>
+              <option value="6">Class 6</option>
+              <option value="7">Class 7</option>
+              <option value="8">Class 8</option>
+              <option value="9">Class 9</option>
             </select>
           </div>
         </div>
@@ -96,7 +97,7 @@ export default function StudentEntryForm() {
                 <tr key={index}>
                   <td>{student.name}</td>
                   <td>{student.age}</td>
-                  <td>{student.grade}</td>
+                  <td>Class {student.grade}</td>
                   <td>
                     <button
                       className="remove-btn"
